@@ -7,12 +7,12 @@ import page.DetailedForecastPage;
 import page.MainPage;
 
 public class WeatherSteps {
-    public final static String baseUrl = "https://yandex.ru/pogoda/";
+    public final static String url = "https://yandex.ru/pogoda/";
 
     @Дано("^Открываем https://yandex.ru/pogoda/$")
     public void openMainPage() {
-        MainPage.openWebSite(baseUrl);
-        System.out.println("Открываем сайт: " + baseUrl);
+        MainPage.openWebSite(url);
+        System.out.println("Открываем сайт: " + url);
     }
 
     @Дано("^Ввести город '(.+)'$")
